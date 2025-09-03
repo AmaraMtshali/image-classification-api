@@ -9,10 +9,10 @@ import io
 app = Flask(__name__)
 CORS(app)
 
-# Load ResNet50 model with pretrained weights
-from torchvision.models import resnet50, ResNet50_Weights
-weights = ResNet50_Weights.DEFAULT
-model = resnet50(weights=weights)
+# Load ResNet18 model with pretrained weights
+from torchvision.models import resnet18, ResNet18_Weights
+weights = ResNet18_Weights.DEFAULT
+model = resnet18(weights=weights)
 model.eval()
 
 # Image transformation pipeline
